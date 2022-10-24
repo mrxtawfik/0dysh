@@ -21,7 +21,7 @@ print(f"""
 print(Z+'━'*25)
 def pas():
 	 J = input(f"{X}[{C}⌯{X}]{C} ENTER Password {X}»{C} ")
-	 e = "MrxTawFik1337"
+	 e = "MrxTawFik"
 	 if J in e:
 	 	print(F+"\n  login in successfully ")
 	 	()
