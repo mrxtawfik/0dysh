@@ -29,14 +29,14 @@ class INDEx():
 	def __new__ (self):
 		print("""
 		
-      \033[0;32    ███    ███ ██████  ██   ██        ██████ ██   ██ ███████ ██   ██ ███████ ██████  
-     \033[32m   ████  ████ ██   ██  ██ ██        ██      ██   ██ ██      ██  ██  ██      ██   ██ 
-    \033[33m    ██ ████ ██ ██████    ███   █████ ██      ███████ █████   █████   █████   ██████  
-   \033[34m     ██  ██  ██ ██   ██  ██ ██        ██      ██   ██ ██      ██  ██  ██      ██   ██ 
-    \033[35m    ██      ██ ██   ██ ██   ██        ██████ ██   ██ ███████ ██   ██ ███████ ██   ██ 
-                                                                                 
-                           \033[31;1m       [ Cheker Number Phone ]\033[0m
-   \033[1m                [ Telegram : @MrxTawFik  [+] Channel  : @Mrx_TawFik ]
+   ███╗░░░███╗██████╗░██╗░░██╗████████╗░█████╗░░██╗░░░░░░░██╗███████╗██╗██╗░░██╗
+   ████╗░████║██╔══██╗╚██╗██╔╝╚══██╔══╝██╔══██╗░██║░░██╗░░██║██╔════╝██║██║░██╔╝
+   ██╔████╔██║██████╔╝░╚███╔╝░░░░██║░░░███████║░╚██╗████╗██╔╝█████╗░░██║█████═╝░
+   ██║╚██╔╝██║██╔══██╗░██╔██╗░░░░██║░░░██╔══██║░░████╔═████║░██╔══╝░░██║██╔═██╗░
+   ██║░╚═╝░██║██║░░██║██╔╝╚██╗░░░██║░░░██║░░██║░░╚██╔╝░╚██╔╝░██║░░░░░██║██║░╚██╗
+   ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝░░░░░╚═╝╚═╝░░╚═╝
+                               \033[31;1m Cheker valid and Phones \033[0m
+		
 		""")
 
 
@@ -56,14 +56,14 @@ def fun_action(num):
 			A , Error = Amazon(num).check()
 			
 			if A:
-				with open("Mrx-TawFik/live.txt","a") as ff:
+				with open("Results/live.txt","a") as ff:
 					ff.write("%s\n" % num)
-				print("\033[0;32m [Mrx TawFik]\033[32;1mYes\033[0m==> %s"  % num) 
+				print(" [Mrx TawFik]\033[32;1mYes\033[0m==> %s"  % num) 
 				break
 				
 			else:
 				
-				print(" \033[0;32m[Mrx TawFik]\033[31;1mNo\033[0m ==> %s"  % num) 
+				print(" [Mrx TawFik]\033[31;1mNo\033[0m ==> %s"  % num) 
 				break
 		except:pass
 		
@@ -71,7 +71,7 @@ def main():
 	
 	# ~ INDEx()
 	
-	email = open( input(" [--> Your List : ")  ,"r",encoding="Latin-1").read().splitlines()
+	email = open( input("[-] List Name : ")  ,"r",encoding="Latin-1").read().splitlines()
 	ThreadPool = Pool(40)
 	ThreadPool.map(fun_action, email)
 
@@ -80,3 +80,7 @@ if __name__ == "__main__":
 	INDEx()
 
 	main()
+
+
+			
+	
